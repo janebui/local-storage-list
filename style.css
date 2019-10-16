@@ -1,46 +1,44 @@
 body {
+    height: 100%;
     font-family: 'Roboto', serif;
+    font-size: 1.2em;
     background-image: url(P1030216.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    height: 100%;
 }
 
 h1 {
     font-size: 3.5em;
 }
 
-
-
 .container {
-    background-color: #FAF9F5;
-    padding: 1em;
     width: 80%;
     max-width: 600px;
+    background-color: #FAF9F5;
+    opacity: 0.8;
+    padding: 10px;
+    margin: 2em auto;
     border-radius: 4px;
     text-align: center;
-    margin: 2em auto;
-    opacity: 0.8;
     -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.4);
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.4);
-
 }
 
 form {
     display: flex;
-    justify-content: center;
     border: 1px solid #283618;
     border-radius: 4px;
+    margin: 5px;
 }
 
 input {
     font-family: 'Roboto', sans-serif;
-    padding: 10px;;
+    font-size: 1.4em;
+    padding: 5px;;
     text-transform: uppercase;
     box-shadow:none;
-    font-size: 1.5em;
     border: none;
     flex-grow: 2;
     border-radius: 4px;
@@ -50,23 +48,32 @@ input:focus {
     box-shadow:none;
 }
 
-
-
 ul {
     list-style-type: none;
-    
     padding: 5px;
-    font-size: 1.5em;
     text-transform: uppercase;
-    
+    font-size: 1.5em;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.remove {
+    cursor: pointer;
+}
+
+.remove:hover {
+    color: red;
 }
 
 button {
     font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
     background-color: #283618;
     color: #FFFFFF;
-    font-size: 1.5em;
-    font-weight: 700;
     padding: 10px;
     border: none;
     transition-duration: 0.3s;
@@ -86,16 +93,23 @@ button:hover {
 }
 
 @media screen and (max-width: 600px) {
+
     h1 {
         font-size: 2em;
     }
 
     .container {
-        width: 100%;
-        margin: 0 0 10px;
+        margin: 10px auto;
+        width: 95%;
         padding-top: 5px;
         padding-bottom: 5px;
-        padding-left: 0px;
-        padding-right: 0px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
+
+    input {
+        font-size: 1em;
+        width: 50%;
+    }
+
 }
