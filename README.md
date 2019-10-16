@@ -1,4 +1,4 @@
-# local-storage-list
+# Local Storage List
 Create a list of items utilizing local storage, which stores data in the browser that persists even after the browser is closed. 
 
 ## Author
