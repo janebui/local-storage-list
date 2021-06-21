@@ -33,7 +33,7 @@ function populateList(itemsArray = [], list) {
 
 // remove an item from the list when clicking X
 function removeItem(e) {
-    if (!e.target.matches('.remove')) return;
+    if (!e.target.matches('.remove')) return; // user clicks on list but not the remove icon
     const li = e.target.parentNode;
     const index = li.dataset.index;
     itemsArray.splice(index, 1);
